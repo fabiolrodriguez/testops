@@ -11,4 +11,4 @@ jobs:
             branch: master
             heroku:
               appname: testeops
-            command: 'git commit heroku master'
+          - run: 'git commit heroku master'
