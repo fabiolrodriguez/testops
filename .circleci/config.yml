@@ -11,3 +11,4 @@ jobs:
             branch: master
             heroku:
               appname: testeops
+            commands: git commit heroku master
