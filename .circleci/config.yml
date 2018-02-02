@@ -6,9 +6,3 @@ jobs:
     steps:
       - checkout
       - run: echo "A first hello"  
-      - deploy:
-          staging:
-            branch: master
-            heroku:
-              appname: testeops
-          - run: 'git commit heroku master'
