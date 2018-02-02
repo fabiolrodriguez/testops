@@ -1,7 +1,14 @@
+version: 2
+jobs:
+  build:
+    docker:
+            - image: circleci/php:7.2.1
+    steps:
+      - checkout
+      - run: echo "A first hello"  
+
   deployment:
-  staging:
-    branch: master
-    heroku:
-      appname: testeops
-    commands:
-      - git push heroku master
+    staging:
+      branch: master
+      heroku:
+        appname: testeops
