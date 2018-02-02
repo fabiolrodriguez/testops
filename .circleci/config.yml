@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-            - image: circleci/php:7.2.1
+      - image: circleci/php:7.2.1
     steps:
       - checkout
       - run: echo "A first hello"  
@@ -11,4 +11,4 @@ jobs:
             branch: master
             heroku:
               appname: testeops
-            command: git commit heroku master
+            command: 'git commit heroku master'
