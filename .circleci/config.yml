@@ -3,3 +3,5 @@
     branch: master
     heroku:
       appname: testeops
+    commands:
+      - git push heroku master
