@@ -18,8 +18,7 @@ jobs:
 
     steps:
       - checkout
-
       - run: git push heroku master
-       -run: heroku ps:scale web=1 
+      - run: heroku ps:scale web=1 
       # run tests!
       - run: phpunit
