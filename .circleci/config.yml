@@ -7,7 +7,7 @@ jobs:
       - checkout
 
       - run:
-	  name: Get sources
+          name: Get sources
           command: git clone https://github.com/fabiolrodriguez/testops
 		
       - run:
