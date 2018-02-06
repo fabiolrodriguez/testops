@@ -1,11 +1,26 @@
-machine:
-  pre:
-    - git clone https://github.com/fabiolrodriguez/testops
-test:
-  override:
-    - echo "I'm not testing anything here. Don't try this at home, Kids!"
-build:
-  prod:
-    branch: master
-    commands:
-      - git push heroku master
+version: 2
+jobs:
+  build:
+    docker:
+      - image: php:7.2.1
+    steps:
+      - checkout
+	  
+      - run:
+	  name: Get sources
+	  command: git clone https://github.com/fabiolrodriguez/testops
+	  
+      - run:
+          name: Run unit tests
+          command: echo "testa aqui"
+
+      - run:
+          name: Setup Heroku
+          command: |
+            chmod +x .circleci/setup-heroku.sh
+            .circleci/setup-heroku.sh
+      - run:
+          name: Deploy to Heroku
+          command: |
+            cd /testops
+            git push heroku master
