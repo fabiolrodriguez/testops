@@ -7,9 +7,9 @@ sudo ln -s /usr/local/lib/heroku/bin/heroku /usr/local/bin/heroku
 
 cat > ~/.netrc << EOF
 machine api.heroku.com
-  login fabio.rodriguez@gmail.com
-  password $API
+  login $HLOGIN
+  password $APIK
 machine git.heroku.com
-  login fabio.rodriguez@gmail.com
-  password $API
+  login $HLOGIN
+  password $APIK
 EOF
