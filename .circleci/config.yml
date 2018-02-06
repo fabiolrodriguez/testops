@@ -3,16 +3,13 @@ jobs:
   build:
     docker:
       - image: php:7.2.1
-
     steps:
-
       - checkout
 	  
-
       - run:
 	  name: Get sources
           command: git clone https://github.com/fabiolrodriguez/testops
-	  
+		
       - run:
           name: Run unit tests
           command: echo "testa aqui"
