@@ -6,9 +6,10 @@ jobs:
     steps:
       - checkout
 	  
+
       - run:
 	  name: Get sources
-	  command: git clone https://github.com/fabiolrodriguez/testops
+          command: git clone https://github.com/fabiolrodriguez/testops
 	  
       - run:
           name: Run unit tests
@@ -22,5 +23,4 @@ jobs:
       - run:
           name: Deploy to Heroku
           command: |
-            cd /testops
             git push heroku master
