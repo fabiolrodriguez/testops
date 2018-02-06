@@ -9,7 +9,7 @@ jobs:
       - run:
           name: Get sources
           command: |
-            apt-get install git -y
+            yum install git -y
             git clone https://github.com/fabiolrodriguez/testops
 
       - run:
