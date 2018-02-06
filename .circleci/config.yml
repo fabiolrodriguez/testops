@@ -5,7 +5,7 @@ jobs:
       - image: php:7.2.1
     steps:
       - checkout
-	  
+
       - run:
 	  name: Get sources
           command: git clone https://github.com/fabiolrodriguez/testops
