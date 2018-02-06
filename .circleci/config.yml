@@ -4,7 +4,7 @@ machine:
 test:
   override:
     - echo "I'm not testing anything here. Don't try this at home, Kids!"
-deployment:
+build:
   prod:
     branch: master
     commands:
