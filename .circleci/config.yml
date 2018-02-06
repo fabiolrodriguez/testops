@@ -1,8 +1,11 @@
-version: 2
-jobs:
-  build:
-    docker:
-      - image: circleci/php:7.2.1
-    steps:
-      - checkout
-      - run: echo "A first hello"  
+machine:
+  pre:
+    - git clone https://github.com/fabiolrodriguez/testops
+test:
+  override:
+    - echo "I'm not testing anything here. Don't try this at home, Kids!"
+deployment:
+  prod:
+    branch: master
+    commands:
+      - git push heroku master
