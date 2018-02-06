@@ -8,7 +8,9 @@ jobs:
 
       - run:
           name: Get sources
-          command: git clone https://github.com/fabiolrodriguez/testops
+          command: |
+            apt-get install git -y
+            git clone https://github.com/fabiolrodriguez/testops
 
       - run:
           name: Run unit tests
