@@ -1,3 +1,3 @@
 <html>
-	<h1>TÁ BOM ASSIM, JONATHAN, SEU PIPIZINHO?</h1>
+	<h1>JA MUDEI A SENHA JONATHAN</h1>
 </html>
